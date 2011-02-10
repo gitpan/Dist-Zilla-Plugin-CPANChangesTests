@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-Plugin-CPANChangesTests
 
+1.001 2011-02-09
+
+ - List Test::CPAN::Changes as a prerequisite.
+   As RT #65608 says: "Not much use without it."
+
 1.000 2011-02-09
 
  - Initial release

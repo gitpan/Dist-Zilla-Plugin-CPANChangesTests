@@ -53,6 +53,7 @@ eval { $v .= pmver('File::Find','any version') };
 eval { $v .= pmver('File::Temp','any version') };
 eval { $v .= pmver('Module::Build','0.3601') };
 eval { $v .= pmver('Moose','any version') };
+eval { $v .= pmver('Test::CPAN::Changes','any version') };
 eval { $v .= pmver('Test::More','0.96') };
 
 

@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::CPANChangesTests;
 BEGIN {
-  $Dist::Zilla::Plugin::CPANChangesTests::VERSION = '1.000';
+  $Dist::Zilla::Plugin::CPANChangesTests::VERSION = '1.001';
 }
 BEGIN {
   $Dist::Zilla::Plugin::CPANChangesTests::AUTHORITY = 'cpan:RWSTAUNER';
@@ -32,7 +32,7 @@ Dist::Zilla::Plugin::CPANChangesTests - Add release tests using Test::CPAN::Chan
 
 =head1 VERSION
 
-version 1.000
+version 1.001
 
 =head1 SYNOPSIS
 

@@ -27,16 +27,17 @@ no_index:
 provides:
   Dist::Zilla::Plugin::CPANChangesTests:
     file: lib/Dist/Zilla/Plugin/CPANChangesTests.pm
-    version: 1.000
+    version: 1.001
 requires:
   Dist::Zilla::Plugin::InlineFiles: 0
   Moose: 0
+  Test::CPAN::Changes: 0
   perl: 5.006
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-CPANChangesTests
   homepage: http://github.com/magnificent-tears/Dist-Zilla-Plugin-CPANChangesTests/tree
   repository: git://github.com/magnificent-tears/Dist-Zilla-Plugin-CPANChangesTests.git
-version: 1.000
+version: 1.001
 x_Dist_Zilla:
   plugins:
     -
@@ -162,7 +163,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::CPANChangesTests
       name: '@GopherRepellent/CPANChangesTests'
-      version: 0.001022
+      version: 1.001
     -
       class: Dist::Zilla::Plugin::MetaTests
       name: '@GopherRepellent/MetaTests'
@@ -214,6 +215,14 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::UploadToCPAN
       name: '@GopherRepellent/UploadToCPAN'
+      version: 4.200003
+    -
+      class: Dist::Zilla::Plugin::Prereqs
+      config:
+        Dist::Zilla::Plugin::Prereqs:
+          phase: runtime
+          type: requires
+      name: Prereqs
       version: 4.200003
     -
       class: Dist::Zilla::Plugin::FinderCode

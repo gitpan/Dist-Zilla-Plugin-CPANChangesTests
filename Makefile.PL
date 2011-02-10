@@ -26,9 +26,10 @@ my %WriteMakefileArgs = (
   'NAME' => 'Dist::Zilla::Plugin::CPANChangesTests',
   'PREREQ_PM' => {
     'Dist::Zilla::Plugin::InlineFiles' => '0',
-    'Moose' => '0'
+    'Moose' => '0',
+    'Test::CPAN::Changes' => '0'
   },
-  'VERSION' => '1.000',
+  'VERSION' => '1.001',
   'test' => {
     'TESTS' => 't/*.t'
   }

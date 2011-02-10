@@ -20,7 +20,7 @@ my %module_build_args = (
     'Randy Stauner <rwstauner@cpan.org>'
   ],
   'dist_name' => 'Dist-Zilla-Plugin-CPANChangesTests',
-  'dist_version' => '1.000',
+  'dist_version' => '1.001',
   'license' => 'perl',
   'module_name' => 'Dist::Zilla::Plugin::CPANChangesTests',
   'recommends' => {},
@@ -28,6 +28,7 @@ my %module_build_args = (
   'requires' => {
     'Dist::Zilla::Plugin::InlineFiles' => '0',
     'Moose' => '0',
+    'Test::CPAN::Changes' => '0',
     'perl' => '5.006'
   },
   'script_files' => []
