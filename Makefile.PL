@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Add release tests using Test::CPAN::Changes',
+  'ABSTRACT' => 'Deprecated',
   'AUTHOR' => 'Randy Stauner <rwstauner@cpan.org>',
   'BUILD_REQUIRES' => {
     'File::Find' => '0',
@@ -29,7 +29,7 @@ my %WriteMakefileArgs = (
     'Moose' => '0',
     'Test::CPAN::Changes' => '0'
   },
-  'VERSION' => '1.001',
+  'VERSION' => '1.002',
   'test' => {
     'TESTS' => 't/*.t'
   }

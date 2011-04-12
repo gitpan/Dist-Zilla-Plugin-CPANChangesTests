@@ -1,9 +1,9 @@
 
 
 This archive contains the distribution Dist-Zilla-Plugin-CPANChangesTests,
-version 1.001:
+version 1.002:
 
-  Add release tests using Test::CPAN::Changes
+  Deprecated
 
 This software is copyright (c) 2011 by Randy Stauner.
 

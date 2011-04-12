@@ -1,17 +1,35 @@
+#
+# This file is part of Dist-Zilla-Plugin-CPANChangesTests
+#
+# This software is copyright (c) 2011 by Randy Stauner.
+#
+# This is free software; you can redistribute it and/or modify it under
+# the same terms as the Perl 5 programming language system itself.
+#
 package Dist::Zilla::Plugin::CPANChangesTests;
 BEGIN {
-  $Dist::Zilla::Plugin::CPANChangesTests::VERSION = '1.001';
+  $Dist::Zilla::Plugin::CPANChangesTests::VERSION = '1.002';
 }
 BEGIN {
   $Dist::Zilla::Plugin::CPANChangesTests::AUTHORITY = 'cpan:RWSTAUNER';
 }
-# ABSTRACT: Add release tests using Test::CPAN::Changes
+# ABSTRACT: Deprecated
 
 
 use strict;
 use warnings;
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
+
+before gather_files => sub {
+	my ($self) = @_;
+	$self->log($_) for (
+		'!',
+		__PACKAGE__ . ' is deprecated.',
+		'Please use Dist::Zilla::Plugin::Test::CPAN::Changes.',
+		'!',
+	);
+};
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
@@ -28,16 +46,19 @@ kwalitee diff irc mailto metadata placeholders
 
 =head1 NAME
 
-Dist::Zilla::Plugin::CPANChangesTests - Add release tests using Test::CPAN::Changes
+Dist::Zilla::Plugin::CPANChangesTests - Deprecated
 
 =head1 VERSION
 
-version 1.001
+version 1.002
 
 =head1 SYNOPSIS
 
+This module is B<deprecated> in favor of the more configurable and better named
+L<Dist::Zilla::Plugin::Test::CPAN::Changes>.
+
   # dist.ini
-  [CPANChangesTests]
+  [Test::CPAN::Changes]
 
 =head1 DESCRIPTION
 
@@ -52,11 +73,7 @@ following files:
 
 =item *
 
-L<CPAN::Changes>
-
-=item *
-
-L<Test::CPAN::Changes>
+L<Dist::Zilla::Plugin::Test::CPAN::Changes>
 
 =back
 

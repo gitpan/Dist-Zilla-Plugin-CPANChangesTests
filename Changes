@@ -1,5 +1,10 @@
 Revision history for Dist-Zilla-Plugin-CPANChangesTests
 
+1.002 2011-04-11
+
+ - Deprecated in favor of the more configurable and better named
+   Dist::Zilla::Plugin::Test::CPAN::Changes
+
 1.001 2011-02-09
 
  - List Test::CPAN::Changes as a prerequisite.

@@ -15,12 +15,12 @@ my %module_build_args = (
   'configure_requires' => {
     'Module::Build' => '0.3601'
   },
-  'dist_abstract' => 'Add release tests using Test::CPAN::Changes',
+  'dist_abstract' => 'Deprecated',
   'dist_author' => [
     'Randy Stauner <rwstauner@cpan.org>'
   ],
   'dist_name' => 'Dist-Zilla-Plugin-CPANChangesTests',
-  'dist_version' => '1.001',
+  'dist_version' => '1.002',
   'license' => 'perl',
   'module_name' => 'Dist::Zilla::Plugin::CPANChangesTests',
   'recommends' => {},
